@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from './header'
-import {Phone,Mail,Linkedin} from 'react-feather'
+import { FaLinkedinIn,FaPhoneAlt } from "react-icons/fa";
+import { CiMail } from "react-icons/ci";
 import './styles/contact.css'
 
 function Contact() {
@@ -10,13 +11,13 @@ function Contact() {
       <div className='contact'>
       <h1>Contact</h1>
       <div className='ic'> 
-      <Phone/>:<a href="+918217768067">+91 8217768067</a>
+      <FaPhoneAlt/>:<a href="+918217768067">+91 8217768067</a>
       </div>
       <div className='ic'>
-      <Mail/>:<a href="rishi2004vishu@gmail.com" className='instagram'>rishi2004vishu@gmail.com</a>
+      <CiMail/>:<a href="rishi2004vishu@gmail.com" className='instagram'>rishi2004vishu@gmail.com</a>
       </div>
       <div className='ic'>
-      <Linkedin/>:<a href='https://www.linkedin.com/in/rishivishwanath' className='linkedin'>https://www.linkedin.com/in/rishivishwanath</a>
+      <FaLinkedinIn/>:<a href='https://www.linkedin.com/in/rishivishwanath' className='linkedin'>https://www.linkedin.com/in/rishivishwanath</a>
       </div>
       </div>
     </div>

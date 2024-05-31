@@ -1,6 +1,7 @@
 import React from 'react'
 import './styles/main.css'
-import {Instagram,Linkedin,GitHub} from 'react-feather'
+import { FaInstagram ,FaLinkedinIn} from "react-icons/fa";
+
 
 function Main() {
   return (
@@ -12,8 +13,8 @@ function Main() {
                     <h1>I AM RISHI VISHWANATH</h1>
                     <p>Full-stack developer | Trader | DSA</p>
                     <div className='icons'>
-                    <a href="https://www.instagram.com/notrishivishwanath?igsh=dzF6ZzlibGJ0bTR3" className='instagram'><Instagram className='icon'/></a>
-                    <a href='https://www.linkedin.com/in/rishivishwanath' className='linkedin'><Linkedin className='icon'/></a>
+                    <a href="https://www.instagram.com/notrishivishwanath?igsh=dzF6ZzlibGJ0bTR3" className='instagram'><FaInstagram className='icon'/></a>
+                    <a href='https://www.linkedin.com/in/rishivishwanath' className='linkedin'><FaLinkedinIn className='icon'/></a>
                     </div>
                 </div>
 

@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import './styles/header.css';
-import { X,BookOpen } from 'react-feather';
+import { IoIosAdd,IoIosBackspace  } from "react-icons/io";
 import { Link } from 'react-router-dom';
-import log from './styles/logo.png'
 
 function Header(){
     const [active,setActive]=useState(false);
@@ -14,7 +13,7 @@ function Header(){
             <nav>
                 <ul>
                     <div className="closed">
-                        <X className="close" onClick={showMenu}/>
+                        <IoIosAdd className="close" onClick={showMenu}/>
                     </div>
                     <li>
                         <Link to='/'>Home</Link>
@@ -35,7 +34,7 @@ function Header(){
                 </ul>
             </nav>
             <div className="changer">
-                <BookOpen className="menu" onClick={showMenu}/>
+                <IoIosBackspace className="menu" onClick={showMenu}/>
             </div>
         </div>
     )
