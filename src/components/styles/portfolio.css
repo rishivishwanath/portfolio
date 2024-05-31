@@ -1,0 +1,15 @@
+.mainp{
+    display:block;
+    justify-content: center;
+    align-items: center;
+   background-color: black;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+.textp{
+    padding: 30px;
+    padding-left: 20%;
+    padding-right: 20%;
+    text-align: center;
+}

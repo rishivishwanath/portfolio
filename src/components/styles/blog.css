@@ -1,0 +1,15 @@
+.mainb{
+    display:block;
+    justify-content: center;
+    align-items: center;
+   background-color: black;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 100vh;
+}
+.blog{
+    text-align: center;
+    font-size: 1000%;
+    padding-top: 10%;
+}
