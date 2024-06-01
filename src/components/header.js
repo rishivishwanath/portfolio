@@ -1,20 +1,18 @@
 import React, { useState } from "react";
 import './styles/header.css';
-import { IoIosAdd,IoIosBackspace  } from "react-icons/io";
+// import { IoMdClose } from "react-icons/io";
+import { CiMenuBurger } from "react-icons/ci";
 import { Link } from 'react-router-dom';
 
-function Header(){
-    const [active,setActive]=useState(false);
-    const showMenu=()=>{
-        setActive(!active)
+function Header() {
+    const [active, setActive] = useState(false);
+    const showMenu = () => {
+        setActive(!active);
     }
-    return(
+    return (
         <div className="Header">
             <nav>
-                <ul>
-                    <div className="closed">
-                        <IoIosAdd className="close" onClick={showMenu}/>
-                    </div>
+                <ul className={active ? "menu active" : "menu"}>
                     <li>
                         <Link to='/'>Home</Link>
                     </li>
@@ -30,14 +28,13 @@ function Header(){
                     <li>
                         <Link to='/blog'>Blog</Link>
                     </li>
-                    
                 </ul>
             </nav>
             <div className="changer">
-                <IoIosBackspace className="menu" onClick={showMenu}/>
+                <CiMenuBurger className="menu-toggle" onClick={showMenu} />
             </div>
         </div>
     )
 }
 
-export default Header
+export default Header;

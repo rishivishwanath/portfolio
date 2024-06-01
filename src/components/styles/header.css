@@ -56,14 +56,9 @@ nav ul li a:hover {
     .Header {
         flex-direction: column;
         align-items: flex-start;
-        padding: 10px;
-    }
-
-    .logo {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        background-color: black;
+        border: 1px;
+        /* padding: 10px; */
     }
 
     nav ul {
@@ -71,10 +66,12 @@ nav ul li a:hover {
         width: 100%;
         /* display: none; */
         position: absolute;
-        top: 60px;
+        top: 10px;
         left: 0;
-        background-color: #282c34;
-        padding: 10px 0;
+        background-color: #000000;
+        border: 1px;
+        border-color: white;
+        /* padding: 10px 0; */
     }
 
     nav ul.nav-active {
@@ -104,4 +101,23 @@ nav ul li a:hover {
         top: 10px;
         right: 20px;
     }
+    /* styles/header.css */
+
+.menu {
+    display: none;
+}
+
+.menu.active {
+    display: block;
+}
+
+/* Additional styles for menu and toggles */
+.closed .close {
+    cursor: pointer;
+}
+
+.changer .menu-toggle {
+    cursor: pointer;
+}
+
 }

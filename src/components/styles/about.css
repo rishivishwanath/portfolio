@@ -1,18 +1,44 @@
-.maina{
-    display:block;
+/* Base styles */
+.maina {
+    display: block; /* Changed to flex for better alignment control */
     justify-content: center;
     align-items: center;
-    height: 690px;
-   background-color: black;
+    height: 100vh; /* Keep the full viewport height */
+    background-color: black;
     background-size: cover;
     background-position: center;
     color: white;
-    /* text-align: left; */
-    height: 100vh;
 }
-.texta{
+
+/* Text container */
+.texta {
     padding: 100px;
     padding-left: 20%;
     padding-right: 20%;
     text-align: center;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .maina {
+        padding: 20px; /* Add padding to avoid content touching screen edges */
+        height: 100vh;
+    }
+
+    .texta {
+        padding: 20px; /* Reduce padding for smaller screens */
+        padding-left: 5%; /* Less padding on the sides for better fit */
+        padding-right: 5%;
+    }
+}
+
+@media (max-width: 480px) {
+    .texta {
+        padding: 10px; 
+        padding-left: 2%;
+        padding-right: 2%;
+        font-size: 14px; 
+        height: 100vh;
+        
+    }
 }

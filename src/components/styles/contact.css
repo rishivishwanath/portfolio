@@ -1,16 +1,17 @@
-.mainc{
-    display:block; 
-    justify-content: center; 
+/* Base styles */
+.mainc {
+    display: block; /* Changed to flex for better alignment control */
+    justify-content: center;
     align-items: center;
-   background-color: black;
+    background-color: black;
     background-size: cover;
     background-position: center;
     color: white;
-    height: 100vh;
+    height: 100vh; /* Full viewport height */
 }
 
-.contact{
-    display:block;
+.contact {
+    display: block; /* Ensures block-level display */
     justify-content: center;
     align-items: center;
     padding: 10px;
@@ -18,6 +19,39 @@
     text-align: left;
     font-size: larger;
 }
-.ic{
+
+.ic {
     padding-bottom: 50px;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .mainc {
+        padding: 20px; /* Add padding to avoid content touching screen edges */
+    }
+
+    .contact {
+        padding: 10px; /* Adjust padding for mobile */
+        padding-left: 20px; /* Reduce left padding */
+        padding-right: 20px; /* Add right padding */
+        text-align: center; /* Center align text for better readability */
+        font-size: medium; /* Adjust font size for better readability */
+    }
+
+    .ic {
+        padding-bottom: 30px; /* Reduce padding-bottom */
+    }
+}
+
+@media (max-width: 480px) {
+    .contact {
+        padding: 10px; /* Further adjust padding for very small screens */
+        padding-left: 10px; /* Less padding on the sides */
+        padding-right: 10px;
+        font-size: small; /* Adjust font size for readability on very small screens */
+    }
+
+    .ic {
+        padding-bottom: 20px; /* Further reduce padding-bottom */
+    }
 }
