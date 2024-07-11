@@ -66,6 +66,23 @@ function Portfolio() {
     Developed using c++
     <h3>Syntax Validator</h3>
     Developed a syntax validator using python.
+    <h3>Human Emotion Detection using MP Holistic</h3>
+    This project focuses on using the MP Holistic model, which 
+    provides multi-person pose estimation, to detect human emotions.
+    Emotions are inferred based on body language and facial
+    expressions captured through the model's keypoints.
+    <h3>Plant Disease Image Classification using TensorFlow</h3>
+    In this project, TensorFlow is used to build a deep learning
+    model for classifying plant diseases from images. The model
+    learns to distinguish between healthy and diseased plants by
+    analyzing features extracted from images of plant leaves or other parts.
+    <h3>Gym Exercise Detection and Rep Count using Holistic and TensorFlow</h3>
+    This project combines the MP Holistic model for 
+    pose estimation and TensorFlow for training a model
+    that detects gym exercises and counts repetitions.
+    By tracking body movements and poses, the system identifies
+    specific exercises being performed and counts the number
+    of repetitions completed.
     </div>
     </div>
   )

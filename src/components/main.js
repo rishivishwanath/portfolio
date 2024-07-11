@@ -1,6 +1,7 @@
 import React from 'react'
 import './styles/main.css'
-import { FaInstagram ,FaLinkedinIn} from "react-icons/fa";
+import { FaInstagram ,FaLinkedinIn,FaGithub} from "react-icons/fa";
+import { TbBrandLeetcode } from "react-icons/tb";
 
 
 function Main() {
@@ -15,6 +16,8 @@ function Main() {
                     <div className='icons'>
                     <a href="https://www.instagram.com/notrishivishwanath?igsh=dzF6ZzlibGJ0bTR3" className='instagram'><FaInstagram className='icon'/></a>
                     <a href='https://www.linkedin.com/in/rishivishwanath' className='linkedin'><FaLinkedinIn className='icon'/></a>
+                    <a href='https://leetcode.com/u/rishi2004vishu/' className='leetcode'><TbBrandLeetcode className='icon'/></a>
+                    <a href='https://github.com/rishivishwanath' className='github'><FaGithub className='icon'/></a>
                     </div>
                 </div>
 
